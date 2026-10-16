@@ -1,42 +1,35 @@
-# Taller de mascotas y sprites
+# MatPrietoLab · Laboratorio de pruebas
 
-Aplicación estática para dibujar sprites, importar hojas, crear movimientos y probar una mascota animada. Los dibujos se procesan en el navegador; la mascota se guarda descargando un archivo JSON.
+Laboratorio de interfaces publicado en [matprietolab.cl](https://matprietolab.cl/).
 
-## Publicación en GitHub Pages
+## Experimentos
 
-Cuenta prevista: matiasprietoc. Repositorio propuesto: mascotas-sprites.
+- Botones, estados de carga, confirmaciones y notificaciones.
+- Paleta de botones con colores preparados, selector personalizado y contraste automático.
+- Contador general de clics y contador independiente de prueba.
+- Área de mouse: clic izquierdo, derecho, central, doble clic, rueda, posición y arrastre.
+- Acceso simulado con roles Administrador, Editor y Visitante.
+- Formularios con validación local.
+- Temas claro/oscuro, color, espaciado y esquinas.
+- Directorio ficticio con filtros, estados y exportación CSV.
+- Registro de actividad y exportación de resultados JSON.
 
-1. Subir los archivos de este paquete directamente a la raíz del repositorio.
-2. En Settings > Pages, elegir Deploy from a branch, main y /(root).
-3. Configurar Custom domain como matprietolab.cl y guardar.
-4. Configurar los registros DNS que aparecen abajo, después de asociar el dominio en Pages.
-5. Activar Enforce HTTPS cuando esté disponible y comprobar la página publicada.
+## Uso local
 
-La presencia de estos archivos no activa Pages por sí sola. Hay que completar la configuración del repositorio.
+Abrir `index.html` con Chrome o Edge. No requiere instalación, compilación ni bibliotecas externas.
 
-## DNS para matprietolab.cl
+## Cuentas de demostración
 
-NIC Chile registra el dominio y permite configurar los servidores de nombres. Los registros A y CNAME se crean en un servicio DNS primario. GitHub Pages aloja la aplicación, pero no administra los servidores DNS del dominio.
-
-| Tipo | Nombre | Valor |
+| Rol | Correo | Contraseña |
 | --- | --- | --- |
-| A | @ | 185.199.108.153 |
-| A | @ | 185.199.109.153 |
-| A | @ | 185.199.110.153 |
-| A | @ | 185.199.111.153 |
-| CNAME | www | matiasprietoc.github.io |
+| Administrador | admin@demo.test | Demo123! |
+| Editor | editor@demo.test | Demo123! |
+| Visitante | visita@demo.test | Demo123! |
 
-Los servidores de nombres para NIC Chile deben ser los que asigne tu proveedor DNS; no son las direcciones IP de GitHub.
+El acceso y los permisos son simulaciones de interfaz. No existe autenticación real ni un servidor de usuarios. Usa únicamente cuentas de ejemplo.
 
-Fuentes:
-- https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
-- https://www.nic.cl/ayuda/faq/ins-05.html
+Los ajustes visuales se guardan en el navegador. Sesiones, contadores, datos ficticios y eventos se reinician al recargar. No se almacenan contraseñas ni el contenido de formularios en el registro.
 
-## Archivos
+## Publicación
 
-- index.html: aplicación completa, sin instalación ni compilación.
-- CNAME: dominio solicitado.
-- .nojekyll: sirve los archivos directamente.
-- dns.csv: registros para el proveedor DNS.
-
-Sprites de ejemplo: JoshR691, según los créditos de la hoja aportada. Conserva la atribución al reutilizarlos.
+GitHub Pages publica la rama `main`, carpeta raíz. `CNAME` conserva el dominio `matprietolab.cl`. Para actualizar el sitio, modificar `index.html` y confirmar el cambio en `main`; no se requiere cambiar el DNS.
